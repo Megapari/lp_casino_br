@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'Montserrat-BoldItalic';
+	font-weight: 700;
+	font-style: italic;
+	src: url('/fonts/Montserrat-BoldItalic.woff') format('woff'),
+		url('/fonts/OpenSans-Regular.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat-Medium';
+	font-weight: 500;
+	src: url('/fonts/Montserrat-Medium.woff') format('woff'),
+		url('/fonts/Montserrat-Medium.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat-SemiBold';
+	font-weight: 600;
+	src: url('/fonts/Montserrat-SemiBold.woff') format('woff'),
+		url('/fonts/Montserrat-SemiBold.ttf') format('truetype');
+	font-display: swap;
+}
+
+:root {
+	--Montserrat-500: 'Montserrat-Medium', sans-serif;
+	--MontserratItalic-700: 'Montserrat-BoldItalic', sans-serif;
+	--Montserrat-600: 'Montserrat-SemiBold', sans-serif;
+}

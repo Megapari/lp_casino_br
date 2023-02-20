@@ -1,0 +1,308 @@
+.wrapper {
+	background-color: #0B4245;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #FFFFFF;
+	font-family: var(--Montserrat-500);
+	background-image: url('../../public/images/bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 20px;
+}
+
+.inner {
+	background:
+		radial-gradient(62.01% 62.01% at 49.97% 55.08%, #F5F5F5 0%, #606361 100%) padding-box,
+		linear-gradient(90deg, #0E627C 0%, #008746 100%) border-box;
+
+	border: 3px solid transparent;
+	box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+	border-radius: 50px;
+	padding: 40px;
+	min-width: 680px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form {
+	padding: 30px;
+	width: calc(100% - 20px);
+	background:
+		linear-gradient(90deg, #575757 0%, #575757 100%) padding-box,
+		linear-gradient(90deg, #008746 0%, #3E4042 100%) border-box;
+
+	border: 3px solid transparent;
+	border-radius: 40px;
+	margin-top: 35px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.info {
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: var(--MontserratItalic-700);
+}
+
+.bonus {
+	font-size: 28px;
+	line-height: 100%;
+	background: linear-gradient(180deg, #1135CD 0%, #0B2079 100%);
+	border-radius: 25px;
+	padding: 25px;
+}
+
+.money {
+	font-size: 40px;
+	line-height: 100%;
+	padding: 20px 60px;
+	background: linear-gradient(180deg, #E6352B 0%, #C42F26 100%);
+	border-radius: 33px;
+	position: relative;
+	top: -10px;
+}
+
+.label {
+	font-size: 26px;
+	line-height: 100%;
+	max-width: 320px;
+	text-align: center;
+	font-family: var(--MontserratItalic-700);
+}
+
+.field {
+	padding: 10px 20px;
+	background: #828282;
+	color: #CFCFCF;
+	border-radius: 8px;
+	outline: none;
+	border: none;
+	margin-bottom: 10px;
+	width: 100%;
+	max-height: 30px;
+	font-size: 14px;
+	line-height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.password {
+	text-transform: none;
+}
+
+.field:focus {
+	background-color: #8d8d8d;
+}
+
+.field::placeholder {
+	color: #CFCFCF;
+	text-transform: uppercase;
+}
+
+.currency {
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.currency .field {
+	text-transform: uppercase;
+}
+
+.currency .field,
+.bot input {
+	width: 49%;
+}
+
+.bot {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.submitWrapper {
+	width: 49%;
+	position: relative;
+}
+
+.loading {
+	position: absolute;
+	top: 5px;
+	right: 40px;
+}
+
+.submit {
+	width: 100% !important;
+	font-size: 18px;
+	line-height: 100%;
+	height: 30px;
+	background: linear-gradient(180deg, #DF0921 0%, #9B1A19 100%);
+	box-shadow: 0px 2px 10px rgba(216, 50, 41, 0.4);
+	border-radius: 8px;
+	border: none;
+	color: #FFF;
+	cursor: pointer;
+	font-family: var(--Montserrat-600);
+}
+
+.submit:hover {
+	background: #DF0921;
+	box-shadow: 0px 2px 10px rgba(216, 50, 41, 0.4);
+}
+
+.note {
+	font-size: 14px;
+	line-height: 100%;
+	color: #fff;
+	text-align: center;
+}
+
+.note:nth-of-type(1) {
+	margin-top: 20px;
+}
+
+.note:nth-of-type(2) {
+	margin-top: 8px;
+}
+
+.error {
+	display: block;
+	color: #ff0000;
+	font-size: 14px;
+	text-align: start;
+	width: 100%;
+	margin-top: -4px;
+	margin-bottom: 6px;
+}
+
+.inputError {
+	border: 1px solid #D23128;
+}
+
+.tickets {
+	width: 500px;
+	height: 200px;
+	background-image: url('../../public/images/tickets.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+	.inner {
+		min-width: 0px;
+		width: 100%;
+		border-radius: 30px 30px 0 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.wrapper {
+		padding-bottom: 0;
+	}
+
+	.currency .field,
+	.bot input {
+		width: 100%;
+	}
+
+	.currency {
+		flex-wrap: wrap;
+	}
+
+	.bot {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.inner {
+		padding: 20px;
+		position: relative;
+		top: -20px;
+		background:
+			radial-gradient(62.01% 62.01% at 49.97% 55.08%, #F5F5F5 0%, #606361 100%);
+		border: none;
+		min-height: calc(100vh - 295px);
+		margin-bottom: -20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.form {
+		padding: 20px 20px 20px 20px;
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+
+	.submitWrapper {
+		width: 200px !important;
+	}
+
+	.submit {
+		height: 40px;
+	}
+
+	.img {
+		transform: scale(0.8);
+	}
+
+	.label {
+		font-size: 16px;
+		max-width: 200px;
+	}
+
+	.note {
+		font-size: 13px;
+	}
+
+	.wrapper {
+		background-image: none;
+		background-color: #606361;
+	}
+
+	.info {
+		width: 100%;
+		background-image: url('../../public/images/bg-mobile.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		padding: 25px 0 210px;
+	}
+
+	.bonus {
+		max-width: 320px;
+		font-size: 18px;
+		padding: 9px 19px;
+		text-align: center;
+	}
+
+	.money {
+		font-size: 24px;
+		padding: 13px 32px;
+		top: -5px;
+	}
+
+	.loading {
+		position: absolute;
+		top: 50%;
+		right: 10%;
+		transform: translate(0, -50%);
+	}
+
+	.tickets {
+		width: 200px;
+		height: 80px;
+	}
+}

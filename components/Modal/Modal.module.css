@@ -1,0 +1,70 @@
+.modalWrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+	padding: 20px 40px;
+	background-color: #3557F8;
+	color: white;
+	font-size: 18px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 2px solid #D23128;
+	border-radius: 10px;
+	font-family: var(--Montserrat-600);
+}
+
+.close {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: -30px;
+	right: -30px;
+}
+
+.line1 {
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: #D23128;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%) rotate(45deg);
+}
+
+.line2 {
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: #D23128;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%) rotate(135deg);
+}
+
+@media screen and (max-width: 768px) {
+	.modal {
+		width: 90%;
+	}
+
+	.close {
+		top: -35px;
+		right: -5px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.modal {
+		width: 90%;
+		padding: 15px 25px;
+	}
+}
